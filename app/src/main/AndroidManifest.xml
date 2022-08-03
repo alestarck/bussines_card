@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bussinesscard">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_person"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:supportsRtl="true"
+        android:name=".data.BusinessCardApplication"
+        android:theme="@style/Theme.BussinessCard">
+        <activity
+            android:name=".ui.AddBusinessCard"
+            android:exported="true" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
